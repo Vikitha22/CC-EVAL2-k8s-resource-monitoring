@@ -1,0 +1,21 @@
+=== UNDER LOAD Mon Nov 16 16:46:29 UTC 2026 ===
+NAME       CPU(cores)   CPU(%)   MEMORY(bytes)   MEMORY(%)   
+minikube   1204m        15%      928Mi           5%          
+NAME                       CPU(cores)   MEMORY(bytes)   
+load-gen                   10m          0Mi             
+php-app-7dc74b89c4-n8mlm   992m         14Mi            
+=== UNDER LOAD Mon Nov 16 16:47:41 UTC 2026 ===
+NAME       CPU(cores)   CPU(%)   MEMORY(bytes)   MEMORY(%)   
+minikube   1213m        15%      929Mi           5%          
+NAME                       CPU(cores)   MEMORY(bytes)   
+php-app-7dc74b89c4-n8mlm   971m         14Mi            
+=== AFTER LOAD Mon Nov 16 16:47:54 UTC 2026 ===
+NAME       CPU(cores)   CPU(%)   MEMORY(bytes)   MEMORY(%)   
+minikube   1213m        15%      929Mi           5%          
+NAME                       CPU(cores)   MEMORY(bytes)   
+php-app-7dc74b89c4-n8mlm   971m         14Mi            
+=== AFTER LOAD (real) Mon Nov 16 16:50:22 UTC 2026 ===
+NAME       CPU(cores)   CPU(%)   MEMORY(bytes)   MEMORY(%)   
+minikube   314m         3%       932Mi           5%          
+NAME                       CPU(cores)   MEMORY(bytes)   
+php-app-7dc74b89c4-n8mlm   1m           13Mi            

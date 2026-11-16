@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: php-app
+  name: php-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: php-app
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: php-app
+    spec:
+      containers:
+      - image: php-monitor:latest
+        imagePullPolicy: IfNotPresent
+        name: php-monitor
+        resources: {}
+status: {}
