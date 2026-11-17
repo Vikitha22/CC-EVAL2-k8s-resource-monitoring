@@ -157,19 +157,19 @@ Timestamped raw output is available in [`evidence.txt`](evidence.txt).
 
 **Figure 1. Pod resource usage under load.** The php-app pod shows about 974m CPU and 14 MiB memory, matching the `kubectl top` reading.
 
-![Pods under load](1-pods-under-load.png)
+![Pods under load](dashboard-pods.png.png)
 
 **Figure 2. Node CPU as the load begins.**
 
-![Node load start](2-node-load-start.png)
+![Node load start](dashboard-nodes.png.png)
 
 **Figure 3. Node CPU at peak load (about 1.2 of 8 cores).**
 
-![Node peak load](3-node-peak-load.png)
+![Node peak load](dashboard-nodes-load.png.png)
 
 **Figure 4. Node CPU returning to baseline after the load is removed.**
 
-![Node after load](4-node-after-load.png)
+![Node after load](dashboard-nodes-after.png.png)
 
 ## 9. Analysis and Discussion
 
@@ -195,13 +195,13 @@ Metrics Server and the Kubernetes Dashboard were successfully configured on a Mi
 
 ```
 .
-├── index.php                  # Sample PHP application
-├── Dockerfile                 # Container image definition
-├── deployment.yaml            # Kubernetes Deployment manifest
-├── evidence.txt               # Timestamped kubectl top output
-├── 1-pods-under-load.png      # Dashboard: pods under load
-├── 2-node-load-start.png      # Dashboard: node, load starting
-├── 3-node-peak-load.png       # Dashboard: node, peak load
-├── 4-node-after-load.png      # Dashboard: node, after load
+├── index.php                       # Sample PHP application
+├── Dockerfile                      # Container image definition
+├── deployment.yaml                 # Kubernetes Deployment manifest
+├── evidence.txt                    # Timestamped kubectl top output
+├── dashboard-pods.png.png          # Dashboard: pods under load
+├── dashboard-nodes.png.png         # Dashboard: node, load starting
+├── dashboard-nodes-load.png.png    # Dashboard: node, peak load
+├── dashboard-nodes-after.png.png   # Dashboard: node, after load
 └── README.md
 ```
